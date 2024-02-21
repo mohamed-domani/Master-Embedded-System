@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	 int x;
+	int y;
+	int sum;
+	printf("enter first integer");
+	fflush(stdout);
+	scanf("%d",&x);
+	printf("enter second integer");
+	fflush(stdout);
+	scanf("%d",&y);
+	printf("sum=%d",x+y);
+	return EXIT_SUCCESS;
+}

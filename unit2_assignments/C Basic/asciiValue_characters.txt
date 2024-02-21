@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int x;
+	printf("enter a character");
+	fflush(stdout);
+	scanf("%c",&x);
+	printf("the ascii value of %c is %d",x,x);
+
+	return EXIT_SUCCESS;
+}
