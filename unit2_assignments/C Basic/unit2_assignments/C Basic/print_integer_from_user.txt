@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int x;
+	printf("enter an integer");
+	fflush(stdout);
+	scanf("%d",&x);
+	fflush(stdout);
+	printf("you entered %d",x); 
+	return EXIT_SUCCESS;
+}
