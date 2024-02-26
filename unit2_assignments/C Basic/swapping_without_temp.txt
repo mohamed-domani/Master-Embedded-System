@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	float x;
+    	float y;
+	printf("enter x: ");
+	fflush(stdout);
+	scanf("%f",&x);
+    	printf("enter y: ");
+	fflush(stdout);
+	scanf("%f",&y);
+	x=x+y;
+	y=x-y;
+	x=x-y;
+    	printf("x= %f\ny= %f",x,y);
+	return EXIT_SUCCESS;
+}

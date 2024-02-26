@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) 
+{   	float x,y;
+    	char z;
+    	printf("enter operator: ");
+	fflush(stdout);
+	scanf("%c",&z);
+    	printf("enter first integer: ");
+	fflush(stdout);
+	scanf("%f",&x);
+    	printf("enter second integer: ");
+	fflush(stdout);
+	scanf("%f",&y);
+	switch(z)
+	{
+        	case '+':
+            		{
+                		printf("sum=%f",x+y);
+            		}
+              	break;
+        	case '-':
+           		{
+                		printf("subtraction=%f",x-y);
+            		}
+              	break;
+        	case '*':
+            		{
+                		printf("multiplication=%f",x*y);
+            		}
+              	break;
+        	case '/':
+            		{
+                		printf("division=%f",x/y);
+            		}
+              	break;
+	}
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) 
+{	  	
+ 	int x,i,fact=1;
+    	printf("enter an integer: ");
+	fflush(stdout);
+	scanf("%d",&x);
+	if (x<0)
+        		printf("ERROR!! factorial cannot be a negative number");
+	for (i=1;i<=x;i++)
+		{
+        		fact=fact*i;
+    		}
+	printf("fact = %d",fact);
+	return EXIT_SUCCESS;
+}

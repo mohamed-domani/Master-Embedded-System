@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) 
+{	
+    int i;
+    char ch;
+    char str[1000];
+    printf("enter a string:\n");
+    gets(str);
+    printf("%s\n",str);
+    for ( i = 0; str[i]!='\0'; ++i);
+    printf(" lenght of string: %d \n",i);
+    return EXIT_SUCCESS;
+}
