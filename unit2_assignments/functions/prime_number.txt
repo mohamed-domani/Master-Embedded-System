@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+	
+int prime_numbers(int x);
+int prime_numbers(int x)
+{
+    int j, flag=0;
+    for(j=2;j<=x/2;j++)
+    {
+        if (x%j==0)
+            {
+                flag=1;
+                break;
+             }
+    }
+    return flag;
+}
+
+int main(void)
+{
+    int flag, x,y;
+    printf("enter two numbers:\n");
+    scanf("%d %d",&x,&y);
+    for(int i=x+1;i<y;i++)
+    {
+        flag=prime_numbers(i);
+        if (flag==0)
+            printf("%d\n",i);
+    }
+    return 0;
+}
+
+	return EXIT_SUCCESS;
+}

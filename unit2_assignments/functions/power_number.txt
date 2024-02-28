@@ -1,0 +1,22 @@
+s#include <stdio.h>
+#include <stdlib.h>
+
+int power_number(int x,int y);
+int power_number(int x,int y)
+{
+    if(y!=1)
+    return x*power_number(x,y-1);
+}
+
+int main(void)
+{
+    int x,y;
+    printf("enter number:\n");
+    scanf("%d",&x);
+    printf("enter power:\n");
+    scanf("%d",&y);
+   printf(" %d ^ %d = %d",x,y,power_number(x,y));
+ 
+
+	return EXIT_SUCCESS;
+}
