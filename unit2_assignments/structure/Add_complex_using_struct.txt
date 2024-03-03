@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+struct Scomplex
+{
+    float real;
+    float imaginary;
+};
+struct Scomplex readcomplex(char name[])
+{
+    struct Scomplex c;
+    printf("enter %s complex value:\n",name);
+     scanf("%f %f",&c.real,&c.imaginary);
+    return c;
+};
+struct Scomplex addcomplex (struct Scomplex x,struct Scomplex y)
+{
+    struct Scomplex c;
+    c.real=x.real+y.real;
+    c.imaginary= x.imaginary +y.imaginary;
+    return c;
+}
+void printcomplex (struct Scomplex c)
+{
+    printf("complex number=%0.2f+(%0.2f)j",c.real,c.imaginary);
+}
+int main()
+{
+    struct Scomplex x,y,z;
+    x=readcomplex("x");
+    y=readcomplex("y");
+    z=addcomplex(x,y);
+    printcomplex(z);
+    return EXIT_SUCCESS;
+}

@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+struct Sstudent
+{
+    char name[50];
+    int roll_number;
+    float mark;
+}x;
+    int main() 
+{
+    struct Sstudent x;
+    printf("enter information of student\n");
+    scanf("%s %d %f",x.name,&x.roll_number,&x.mark);
+    printf("name: %s\nroll number: %d\nmark: %.2f",x.name,x.roll_number,x.mark);
+    return EXIT_SUCCESS;
+}
